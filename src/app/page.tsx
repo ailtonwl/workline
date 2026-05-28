@@ -1,3 +1,20 @@
-export default function HomePage() {
-  return <h1>Olá Ailton, estou dentro de page.tsx</h1>;
+import { Container } from '@/components/Container';
+import { PostsList } from '@/components/PostsList';
+import { SpinLoader } from '@/components/SpinLoader';
+import { Suspense } from 'react';
+
+export default async function HomePage() {
+  return (
+    <Container>
+      <header>
+        <h1 className='text-6xl font-bold text-center py-8'>Aqui é a Footer</h1>
+      </header>
+      <Suspense fallback={<SpinLoader />}>
+        <PostsList />
+      </Suspense>
+      <footer>
+        <h1 className='text-6xl font-bold text-center py-8'>Aqui é a Footer</h1>
+      </footer>
+    </Container>
+  );
 }
