@@ -8,6 +8,7 @@
   "editor.glyphMargin": false,
   // "workbench.activityBar.location": "hidden",
   "workbench.activityBar.location": "default",
+  "workbench.editor.enablePreview": false,
   "editor.lineNumbers": "on",
   "files.eol": "\n", // Final de linha sempre será LF
   "workbench.editor.labelFormat": "short",

@@ -1,24 +1,19 @@
-'use client';
 import clsx from 'clsx';
+import Link from 'next/link';
 
 export function Header() {
-  console.log('====================================');
-  console.log('Header');
-  console.log('====================================');
   return (
-    <h1
-      className={clsx(
-        'text-xl',
-        'font-bold',
-        'text-blue-500',
-        'hover:text-blue-50',
-        'hover:bg-blue-500',
-        'transition',
-        'duration-300',
-      )}
-      onClick={() => alert('215')}
-    >
-      Texto no meu h1
-    </h1>
+    <header>
+      <h1
+        className={clsx(
+          'text-4xl/normal font-extrabold py-8',
+          'sm:text-5xl sm:py-10',
+          'md:text-6xl md:py-11',
+          'lg:text-7xl lg:py-12',
+        )}
+      >
+        <Link href='#'>WorkLine</Link>
+      </h1>
+    </header>
   );
 }
