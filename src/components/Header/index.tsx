@@ -1,4 +1,5 @@
 import clsx from 'clsx';
+import Image from 'next/image';
 import Link from 'next/link';
 
 export function Header() {
@@ -12,7 +13,10 @@ export function Header() {
           'lg:text-7xl lg:py-12',
         )}
       >
-        <Link href='#'>WorkLine</Link>
+        <Link href='#'>
+          <Image src='/logowl.png' width={343} height={70} alt='Logomarca' />
+          <span className='text-2xl'>Revenda ATS Informática</span>
+        </Link>
       </h1>
     </header>
   );
