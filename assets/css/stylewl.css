@@ -1,0 +1,125 @@
+.buttons {width: 100%; margin-top: 2%;}
+.buttons i {float: right;}
+.btn {width: 100%; font-size: 1.2em; text-align: left; cursor: pointer; padding: 5%; }
+.btn-orcamento { color: #130400;}
+.btn-conhecer {color:#fff ; margin-top: 5%;}
+.bg-white {background-color: #fff;}
+.radius {border-radius: 7px;}
+.bg-black {background-color: #130400; }
+
+.card-description {
+    padding-bottom: 0rem;
+  }
+
+.p-card-description {
+    font-size: 1.5rem;
+}
+
+/* The Modal (background) */
+.modal, .modal1 {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 60%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close, .close1 {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.close1:hover,
+.close1:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.font-min {
+  font-size: 1.5rem;
+}
+
+.grid-but-wl {
+  margin: 0 auto;
+  display: grid;
+  width: 90%;
+  text-align: center;
+}
+
+.btn-wl-primary {
+  padding: 1%;
+  text-align: center;
+  font-size: 2rem;
+  cursor: pointer;
+  color: var(--white-color);
+  background-color: #125ef7;
+  border-color: #125ef7;
+}
+
+.btn-wl-primary:hover {
+  color: var(--white-color);
+  background-color: #0b5ed7;
+  border-color: #0a58ca;
+}
+
+.aviso {
+  display: flex;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  margin-top: 2rem;
+  border: solid 1px #73ef97;
+  position: relative;
+  color: var(--primary-color);
+  background-color: #83ef73;
+  border-radius: 2%;
+}
+
+.retornocontato {
+  display: contents;
+  justify-content: center;
+  width: 90%;
+}
+
+.full-center {
+  width: 100%;
+  justify-content: center;
+  display: grid;
+}
+
+.error-text {
+  font-size: 16px;
+  color: yellow;
+}
+
+.container-rodape {width: 100%; float: left; padding: 1.5% 4%; text-align: center;}
+/* .bg-gradient {background: linear-gradient(to right,#283895,#1b75bb);} */
+.bg-gradient {background-color: #0f1825;}
+.social-icons a {font-size: 1.5em; color: rgba(255,255,255,0.7); margin-right: 3%;}
+.social-icons a:last-child {margin-right: 0;}
+.social-icons a:hover {color: rgb(255,255,255);}
+.copyright {color: rgba(255, 255, 255, 0.7); margin-top:2%;}

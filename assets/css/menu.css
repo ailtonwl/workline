@@ -1,0 +1,132 @@
+.menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 1;
+    border-bottom: 0.1rem solid var(--light-gray-color);
+  }
+  
+  .menu-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  
+  .menu h1 {
+    font-size: 2.3rem;
+    color: var(--primary-color);
+  }
+  
+  .menu h1 a {
+    color: inherit;
+  }
+  
+  .menu ul {
+    list-style: none;
+    display: flex;
+  }
+  
+  .menu ul li a {
+    display: block;
+    padding: 2rem;
+    font-size: 1.8rem;
+    color: var(--primary-color);
+    position: relative;
+  }
+  
+  .menu ul li a::after {
+    content: '';
+    position: absolute;
+    bottom: 2rem;
+    left: 50%;
+    width: 0;
+    height: 0.2rem;
+    background: var(--secondary-color); 
+    transition: all 300ms ease-in-out;
+  }
+  
+  .menu ul li a:hover::after {
+    width: 50%;
+    left: 25%;
+  }
+
+/* minha lista de links */
+
+.links {
+  position: relative;
+}
+
+.links-content {
+  /* display: flex;
+  justify-content: space-between;
+  align-items: center; */
+  padding-top: 0;
+  padding-bottom: 0;
+  /* flex-flow: column wrap;
+  white-space: nowrap; */
+  justify-content: center;
+}
+
+.links ul {
+  position: relative;
+  /* reset do position, não relacionado ao demo, mas bom pra uso geral.  */
+  margin: 0;
+  /* Zeramos as margens e o padding do UL para as células.encostarem     */
+  padding: 0;
+  width: 100%;
+  /* por default, os blocos são 100%, mas vamos garantir isso.           */
+  height: 100%;
+  /* aqui foi feito pra fins de demonstração apenas.                     */
+}
+
+.links li {
+  display: block;
+  /* primeiro passo, transformar o LI em bloco.                   */
+  list-style-type: none;
+  /* depois, remoção dos bullets.                                 */
+  /* margin: 0; */
+  /* nao queremos espaços ente os blocos.                         */
+  /* box-sizing: border-box; */
+  /* medidas são de borda à borda, o padding não é acrescentado.  */
+  height: 5rem;
+  /* esta linha é pela estética do demo                           */
+  width: auto;
+  float: left;
+  /* ... e o alinhamos à esquerda.                                */
+  width: auto;
+  white-space: nowrap;
+  margin: 1rem;
+  text-align: center;
+}
+
+.links ul li a {
+  display: block;
+  padding: 1.2rem;
+  font-size: 1.8rem;
+  position: relative;
+  font-size: 1.8rem;
+  color: var(--white-color);
+  border-radius: 7%;
+  border: 0.1rem solid var(--blue-wl-color);
+  background: var(--blue-wl-color);
+}
+
+.links ul li a::after {
+  content: '';
+  position: absolute;
+  bottom: 1rem;
+  left: 50%;
+  width: 0;
+  height: 0.2rem;
+  background: yellow; 
+  transition: all 300ms ease-in-out;
+}
+
+.links ul li a:hover::after {
+  width: 80%;
+  left: 10%;
+}
